@@ -63,15 +63,11 @@ main {
     width: 100%;
 }
 
-.main-info {
-    width: 45.5vw;
-}
-
 .display-1 {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 0 0 0 5%;
+    margin: -10px -10px -10px 4%;
 }
 
 .display-1 h1 {
@@ -87,23 +83,102 @@ main {
 }
 
 .display-1 a img {
-    width: 1cm;
-    height: 1cm;
+    width: 45px;
+    height: 45px;
 }
 
 .display-2 {
     font-size: 2.3cm;
     font-weight: bold;
-    margin: 0 16% 0 0;
+    margin: -10px 16% -10px -10px;
     color: #001574;
 }
 
 .display-3 {
     font-size: 0.5cm;
-    margin: 0;
+    margin: 0 35% 0 0;
 }
 
 .display-4 {
     font-size: 0.5cm;
     margin: 0 0 0 4%;
+}
+
+/* Sobre */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4rem;
+    margin-top: 3rem;
+    background-color: #333333f1;
+    padding: 4% 0 4% 0;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 400px;
+}
+
+.about-images > a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid #ffffff42;
+    box-shadow: rgba(0, 47, 255, 0.4) 5px 5px, rgba(0, 30, 160, 0.3) 10px 10px, rgba(0, 20, 100, 0.2) 15px 15px, rgba(0, 10, 50, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-images > a:hover {
+    transform: translate3d(-5px, -5px, 0);
+}
+
+.about-images img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.about-images h4 {
+    margin: 0 0 0 0;
+    font-size: 1.1rem;
+    color: #002fff;
+}
+
+.about-images p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #002fff;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #ffffff;
 }
