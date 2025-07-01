@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+#about {
+  scroll-margin-top: 23vh;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -101,7 +105,7 @@ main {
 
 .display-4 {
     font-size: 0.5cm;
-    margin: 0 0 0 4%;
+    margin: 0;
 }
 
 /* Sobre */
@@ -114,6 +118,7 @@ main {
     width: 100%;
     gap: 4rem;
     margin-top: 3rem;
+    scroll-padding-top: 23vh;
     background-color: #333333f1;
     padding: 4% 0 4% 0;
 }
@@ -181,4 +186,70 @@ main {
 .about-text p {
     font-size: 1.1rem;
     color: #ffffff;
+}
+
+/* Estudos */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 4% 0 4% 0;
+}
+
+.education h2 {
+    font-size: 2rem;
+    color: #002fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.education-item {
+    background: #333333f1;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    padding: 2rem 2.5rem;
+    min-width: 280px;
+    max-width: 380px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #002fff33;
+}
+
+.education-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.education-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #b3c6ff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.education-item p {
+    margin: 0.2rem 0;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
 }
